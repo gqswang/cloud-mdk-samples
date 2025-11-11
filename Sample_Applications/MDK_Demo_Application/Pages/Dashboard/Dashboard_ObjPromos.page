@@ -19,10 +19,10 @@
 					"ObjectHeader": {
 						"Tags": [
 							{
-								"Text": "/MDKDemoApp/Rules/Dashboard/daysLeftInQuarter.rule.js"
+								"Text": "/MDKDemoApp/Rules/Dashboard/daysLeftInQuarter.js"
 							},
 							{
-								"Text": "/MDKDemoApp/Rules/Dashboard/getCurrentQuarter.rule.js"
+								"Text": "/MDKDemoApp/Rules/Dashboard/getCurrentQuarter.js"
 							}
 						],
 						"Description": "$(L,'dashboard_header_body')",

@@ -1,0 +1,113 @@
+{
+  "Caption": "Scan Business Card",
+  "ActionBar": {
+    "Items": [
+      {
+        "_Name": "ActionBarItemCancel",
+        "Caption": "Cancel",
+        "SystemItem": "Cancel",
+        "Position": "Left",
+        "OnPress": "/MDKDemoApp/Actions/ClosePage.action"
+      },
+      {
+        "_Name": "ActionBarItemSave",
+        "Caption": "Save",
+        "SystemItem": "Save",
+        "Position": "Right",
+        "OnPress": "/MDKDemoApp/Actions/Customer/NavToCustomer_Detail.action"
+      }
+    ]
+  },
+  "Controls": [
+    {
+      "_Type": "Control.Type.SectionedTable",
+      "_Name": "SectionedTable",
+      "Sections": [
+        {
+          "_Type": "Section.Type.FormCell",
+          "_Name": "SectionFormCell0",
+          "Header": {
+            "Caption": "Business Card Photo",
+            "_Type": "SectionCommon.Type.Header"
+          },
+          "Controls": [
+            {
+              "_Type": "Control.Type.FormCell.Attachment",
+              "_Name": "AttachmentBusinessCard",
+              "AttachmentTitle": "Business Card",
+              "AttachmentActionType": [
+                "AddPhoto",
+                "TakePhoto"
+              ],
+              "AllowMultiple": false,
+              "OnValueChange": "/MDKDemoApp/Rules/Customer/ScanBusinessCard.js"
+            }
+          ]
+        },
+        {
+          "_Type": "Section.Type.FormCell",
+          "_Name": "SectionFormCell1",
+          "Header": {
+            "Caption": "Extracted Information",
+            "_Type": "SectionCommon.Type.Header"
+          },
+          "Controls": [
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "FormCellFirstName",
+              "Caption": "First Name",
+              "PlaceHolder": "Enter first name",
+              "IsEditable": true
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "FormCellLastName",
+              "Caption": "Last Name",
+              "PlaceHolder": "Enter last name",
+              "IsEditable": true
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "FormCellPhone",
+              "Caption": "Phone",
+              "PlaceHolder": "Enter phone number",
+              "KeyboardType": "Phone",
+              "IsEditable": true
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "FormCellEmail",
+              "Caption": "Email",
+              "PlaceHolder": "Enter email",
+              "KeyboardType": "Email",
+              "IsEditable": true
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "FormCellAddress",
+              "Caption": "Address",
+              "PlaceHolder": "Enter address",
+              "IsEditable": true
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "FormCellCompany",
+              "Caption": "Company",
+              "PlaceHolder": "Enter company name",
+              "IsEditable": true
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "FormCellJobTitle",
+              "Caption": "Job Title",
+              "PlaceHolder": "Enter job title",
+              "IsEditable": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_Type": "Page",
+  "_Name": "Customer_BusinessCard_Edit"
+}

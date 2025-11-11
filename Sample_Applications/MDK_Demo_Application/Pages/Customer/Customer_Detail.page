@@ -1,5 +1,16 @@
 {
 	"Caption": "Customer Detail",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItemScanCard",
+				"Caption": "Scan Card",
+				"SystemItem": "Camera",
+				"Position": "Right",
+				"OnPress": "/MDKDemoApp/Actions/Customer/NavToBusinessCardEdit.action"
+			}
+		]
+	},
 	"Controls": [
 		{
 			"LoadingIndicator": {
