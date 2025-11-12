@@ -1,0 +1,19 @@
+{
+  "_Type": "Action.Type.AICore.Chat.Completions",
+  "ResourceGroup": "default",
+  "APIVersion": "2024-02-01",
+  "Target": {
+    "Service": "/MDKDemoApp/Services/AzureOpenAI.service",
+    "Path": "/chat/completions"
+  },
+  "Properties": {
+    "Model": "gpt-4o",
+    "Messages": []
+  },
+  "ShowActivityIndicator": true,
+  "ActivityIndicatorText": "Analyzing business card...",
+  "ActionResult": {
+    "_Name": "ChatCompletionsResult"
+  },
+  "OnFailure": "/MDKDemoApp/Actions/GenericToastMessage.action"
+}

@@ -1,0 +1,5 @@
+{
+  "DestinationName": "AICoreAPI",
+  "PathSuffix": "/inference/deployments/d123456789",
+  "OfflineEnabled": false
+}
