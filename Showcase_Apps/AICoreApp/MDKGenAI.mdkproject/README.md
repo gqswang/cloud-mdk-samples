@@ -1,6 +1,6 @@
 # AI-Enabled Field Service App
 
-This project serves as a Demo App for consuming SAP AI Core services and SAP HANA Vector DB service with the SAP Mobile Development Kit (MDK). It demonstrates the following use cases:
+This project serves as a demo app for consuming SAP AI Core and SAP HANA Vector DB services using the SAP Mobile Development Kit (MDK). It demonstrates the following use cases:
 
 1. Extracting meter readings from images.
 2. Detecting anomalies using images.
