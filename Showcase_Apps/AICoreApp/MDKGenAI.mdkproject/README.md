@@ -47,7 +47,7 @@ The testing OData service has been modified to support the following functions:
     deleteEmbeddings(): returns String
     getRagResponse(value: String): returns String
 
-For this demo, the embeddings are configured in PopulateEmbeddings.js
+For this demo, the embeddings are configured in PopulateEmbeddings.js.
 
 ### Setup
 
