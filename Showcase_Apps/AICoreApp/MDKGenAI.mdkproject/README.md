@@ -5,7 +5,7 @@ This project serves as a demo app for consuming SAP AI Core and SAP HANA Vector 
 1. Extracting meter readings from images
 2. Detecting anomalies from images
 3. Generating operations based on text-described anomalies
-4. Auto-filling forms using speech-to-text conversion.
+4. Auto-filling forms using speech-to-text conversion
 
 ## Getting Started
 ### Prerequisites
