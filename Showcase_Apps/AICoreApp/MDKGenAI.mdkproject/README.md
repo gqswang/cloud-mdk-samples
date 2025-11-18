@@ -9,7 +9,7 @@ This project serves as a demo app for consuming SAP AI Core and SAP HANA Vector 
 
 ## Getting Started
 ### Prerequisites
-1. Create an instance of SAP AI Core and then create a Service Key.
+1. Create an instance of SAP AI Core and then create a service key.
 
 * Refer to the following tutorials for details on how to set up SAP AI Core and SAP AI Launchpad:
 - https://developers.sap.com/tutorials/ai-core-launchpad-provisioning.html
