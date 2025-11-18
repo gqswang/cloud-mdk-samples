@@ -1,4 +1,4 @@
-# MDK Generative AI 
+# AI-Enabled Field Service App
 
 This project serves as a Demo App for consuming SAP AI Core services and SAP HANA Vector DB service with the SAP Mobile Development Kit (MDK). It demonstrates the following use cases:
 
