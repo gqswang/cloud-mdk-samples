@@ -11,7 +11,10 @@ This project serves as a demo app for consuming SAP AI Core and SAP HANA Vector 
 ### Prerequisites
 1. Create an instance of SAP AI Core and then create a Service Key.
 
-* refer to https://developers.sap.com/tutorials/ai-core-launchpad-provisioning.html and https://developers.sap.com/tutorials/ai-core-generative-ai.html for details on how to setup SAP AI Core and SAP AI Launchpad
+* Refer to the following tutorials for details on how to set up SAP AI Core and SAP AI Launchpad:
+- https://developers.sap.com/tutorials/ai-core-launchpad-provisioning.html
+- https://developers.sap.com/tutorials/ai-core-generative-ai.html
+
 
 2. Create a deployment for a model that supports the Chat Completions API and accepts image input. This demo uses the GPT-4o model.
 
