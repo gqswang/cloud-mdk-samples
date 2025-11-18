@@ -2,7 +2,7 @@
 
 This project serves as a demo app for consuming SAP AI Core and SAP HANA Vector DB services using the SAP Mobile Development Kit (MDK). It demonstrates the following use cases:
 
-1. Extracting meter readings from images.
+1. Extracting meter readings from images
 2. Detecting anomalies using images.
 3. Generating operations based on text-described anomalies.
 4. Auto-filling forms using speech-to-text conversion.
