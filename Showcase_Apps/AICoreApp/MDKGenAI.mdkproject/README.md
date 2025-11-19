@@ -34,7 +34,7 @@ URL.headers.AI-Resource-Group: default # adjust if necessary
 URL.headers.Content-Type: application/json
 HTML5.DynamicDestination: true
 ```
-4. Create a similar destination in Mobile Services for the deployed service using the Service Key of SAP AI Core for Mobile.
+3. Create a similar destination in Mobile Services for the deployed service using the Service Key of SAP AI Core for Mobile.
 
 
 Please refer to the tutorial below to create a database that supports vectors.
