@@ -1,13 +1,41 @@
 # AI-Enabled Field Service App
 
-This project serves as a demo app for consuming SAP AI Core and SAP HANA Vector DB services using the SAP Mobile Development Kit (MDK). It demonstrates the following use cases:
+This is a showcase application that demonstrates consuming SAP AI Core and SAP HANA Vector DB services using the SAP Mobile Development Kit (MDK). The application was created during the SAP Mobile Development Kit (MDK) integration with SAP AI Core services blob series.  Lnks to the blog posts are included below.  The application demonstates:
 
 1. Extracting meter readings from images
 2. Detecting anomalies from images
 3. Generating operations based on text-described anomalies
 4. Auto-filling forms using speech-to-text conversion
 
-## Getting Started
+*Last Updated: 18-Nov-2025*
+
+***
+
+## Author
+
+* Qiu shi Wang ([GitHub](https://github.com/gqswang))
+
+***
+
+## Requirements
+
+### *Supported Platforms*
+
+* iOS
+* Android
+
+### *MDK Client Version*
+
+* MDK 24.11 or higher
+
+### *Data Source*
+
+* SAP AI Core Destination
+* CAP Vector Engine serivce Destination
+
+***
+
+## Setup Instructions
 ### Prerequisites
 1. Create an instance of SAP AI Core and then create a service key.
 
@@ -46,7 +74,9 @@ The testing OData service has been modified to support the following functions:
 
 For this demo, the embeddings are configured in PopulateEmbeddings.js.
 
-### Setup
+## Setup
+
+After onboarding to the application in the MDK clien the Vector DB needs to be populated using the following steps
 
 #### Populate embeddings 
 
@@ -102,7 +132,21 @@ Users can add more knowledge through PopulateEmbeddings.js by specifying the equ
 
 To update the database, clear and repopulate the embeddings via VectorDB.
 
-### Limitation
+### Limitations
 Only one type of equipment image can be uploaded per anomaly detection request. For example, you can upload multiple images of a water pump but not images of different equipment types simultaneously. Users may need to refine the prompts to overcome this limitation.
 
-Note that the NativeScript voice plugin is used for this demo for voice input since voice input is not yet supported by the Chat Completions API.
+Note: the NativeScript voice plugin is used for this demo since voice input is not yet supported by the Chat Completions API.
+
+
+## Screenshots
+
+### Architecture Diagram
+<img src="./Screenshots/ArchDiagram.png" alt="MDK" width="800" style="max-height:1600px; object-fit:contain;" />
+
+
+| Functionality | iOS |
+| --- | --- | 
+| Equipment Check with AI | <img src="./Screenshots/EquipCheckwithAI.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
+| Voice Input | <img src="./Screenshots/VoiceInput.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
+| | <img src="./Screenshots/VoiceInput2.png" alt="MDK" width="228" style="max-height:450px; object-fit:contain;" /> |
+
