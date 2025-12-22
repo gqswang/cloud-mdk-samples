@@ -50,13 +50,12 @@ This is a showcase application that demonstrates consuming SAP AI Core and SAP H
     | Basic Info | `Destination Name`| `AICoreAPI` |
     | Basic Info | `Destination Type`| `Internet Destination` |
     | Basic Info | `URL` | `<AI-API-OF-AI-CORE-SERVICE-KEY>/v2` |
-    | Custom Headers | Header Name: `AI-Resource-Group` | Value: `default` |
-    | Custom Headers | Header Name: `Content-Type` | Value: `application/json` |
     | Destination Configuration | SSO Mechanism | `OAuth2 Client Credentials` |
     | Destination Configuration | Token Service URL | `<TOKEN-SERVICE-URL-OF-AI-CORE-SERVICE-KEY>/oauth/token` |
     | Destination Configuration | Client ID | `<YOUR-CLIENT-ID-OF-AI-CORE-SERVICE-KEY>` |
     | Destination Configuration | Client Secret | `<YOUR-CLIENT-SECRET-OF-AI-CORE-SERVICE-KEY>` |
 
+    ![MDK](./Screenshots/Destination.png)
 
 Please refer to the tutorial below to create a database that supports vectors.
 
