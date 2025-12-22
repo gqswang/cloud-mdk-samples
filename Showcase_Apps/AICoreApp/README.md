@@ -7,7 +7,7 @@ This is a showcase application that demonstrates consuming SAP AI Core and SAP H
 3. Generating operations based on text-described anomalies
 4. Auto-filling forms using speech-to-text conversion
 
-*Last Updated: 21-Dec-2025*
+*Last Updated: 22-Dec-2025*
 
 ***
 
@@ -43,23 +43,19 @@ This is a showcase application that demonstrates consuming SAP AI Core and SAP H
 
 2. Create a deployment for a model that supports the Chat Completions API and accepts image input. This demo uses the GPT-4o model.
 
+3. Create a destination in the Mobile Servies Admin UI > your app configuration > **Connectivity** with following information:
 
-```bash
-Name: AICoreAPI
-Description: SAP AI Core deployed service
-URL: <AI-API-OF-AI-CORE-SERVICE-KEY>/v2 # make sure to add /v2!
-Type: HTTP
-ProxyType: Internet
-Authentication: OAuth2ClientCredentials
-tokenServiceURL: <TOKEN-SERVICE-URL-OF-AI-CORE-SERVICE-KEY>/oauth/token
-clientId: <YOUR-CLIENT-ID-OF-AI-CORE-SERVICE-KEY>
-clientSecret: <YOUR-CLIENT-SECRET-OF-AI-CORE-SERVICE-KEY>
-# Additional Properties:
-URL.headers.AI-Resource-Group: default # adjust if necessary
-URL.headers.Content-Type: application/json
-HTML5.DynamicDestination: true
-```
-3. Create a similar destination in Mobile Services for the deployed service using the Service Key of SAP AI Core for Mobile.
+    | Step | Field | Value |
+    |----|----|----|
+    | Basic Info | `Destination Name`| `AICoreAPI` |
+    | Basic Info | `Destination Type`| `Internet Destination` |
+    | Basic Info | `URL` | `<AI-API-OF-AI-CORE-SERVICE-KEY>/v2` |
+    | Custom Headers | Header Name: `AI-Resource-Group` | Value: `default` |
+    | Custom Headers | Header Name: `Content-Type` | Value: `application/json` |
+    | Destination Configuration | SSO Mechanism | `OAuth2 Client Credentials` |
+    | Destination Configuration | Token Service URL | `<TOKEN-SERVICE-URL-OF-AI-CORE-SERVICE-KEY>/oauth/token` |
+    | Destination Configuration | Client ID | `<YOUR-CLIENT-ID-OF-AI-CORE-SERVICE-KEY>` |
+    | Destination Configuration | Client Secret | `<YOUR-CLIENT-SECRET-OF-AI-CORE-SERVICE-KEY>` |
 
 
 Please refer to the tutorial below to create a database that supports vectors.
